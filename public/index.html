@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <!-- Links -->
+    <link rel="preconnect" href="%REACT_APP_NODE_1%" />
+    <link rel="preconnect" href="%REACT_APP_NODE_2%" />
+    <link rel="preconnect" href="%REACT_APP_NODE_3%" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@400;600&display=swap" rel="stylesheet" />
+    <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.png" />
+    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo.svg" />
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    <!-- Meta -->
+    <title>Home | BriseSwap</title>
+    <meta
+      name="description"
+      content="Cheaper and faster than Uniswap? Discover BriseSwap, the DEX with the true definition of DeFi on Bitgert Chain."
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5, minimum-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <meta
+      name="twitter:description"
+      content="Bringing you the true meaning of DeFi on Bitgert! Earn BSWAP through yield farming or BSWAP pools."
+    />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="BriseSwap - A next evolution DeFi exchange on Bitgert Chain" />
+    <script type="text/javascript">
+      let dapp_id="b8f39f67-3f68-490a-bda9-55bf73659d45"; // replace with dapp_id provided by hashmail
+      let hashmail_settings={
+        widgetMode:"dark", // other modes - 'dark' or 'light' or 'other'
+        widgetTheme: "#444649", // any valid hex code ; this is only valid when widgetMode is `other`
+        horizontalPadding: [0,0], // [mobile, desktop] ; positions widget away from the horizontal edge
+        verticalPadding: [0,0], // [mobile,desktop] ; positions widget away from the vertical edge
+      };
+    !function(){window.hashmail||(window.hashmail=[]),window.hashmail.queue=[];let i=["load","identify","track"],t=function(i){return function(){a=Array.prototype.slice.call(arguments),a.unshift(i),window.hashmail.queue.push(a)}};for(var e=0;i.length>e;e++)window.hashmail[i[e]]=t(i[e]);hashmail.methods=i,window.hashmail.load=function(i,t){window.hashmail.dapp_id=i,window.hashmail.settings=t;var e=document,s=e.getElementsByTagName("script")[0],h=e.createElement("script");h.type="text/javascript",h.async=!0,h.src="https://widget.hashmail.dev/notifier_tracking_script.js",s.parentNode.insertBefore(h,s)},window.hashmail.identify=i=>{window.hashmail.wallet_address=i,localStorage.setItem("hashmail-wallet_address",i)},window.hashmail.load(dapp_id,hashmail_settings)}();
+    </script>
+
+    <!-- GTAG -->
+    <script>
+      ;(function (w, d, s, l, i) {
+        w[l] = w[l] || []
+        w[l].push({ 'gtm.start': new Date().getTime(), event: 'gtm.js' })
+        var f = d.getElementsByTagName(s)[0],
+          j = d.createElement(s),
+          dl = l != 'dataLayer' ? '&l=' + l : ''
+        j.async = true
+        j.src = 'https://www.googletagmanager.com/gtm.js?id=' + i + dl
+        f.parentNode.insertBefore(j, f)
+      })(window, document, 'script', 'dataLayer', '%REACT_APP_GTAG%')
+    </script>
+  </head>
+  <body>
+    <!-- GTAG (noscript) -->
+    <noscript>
+      <iframe
+        src="https://www.googletagmanager.com/ns.html?id=%REACT_APP_GTAG%"
+        height="0"
+        width="0"
+        style="display: none; visibility: hidden"
+      ></iframe>
+    </noscript>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root"></div>
+    <div id="portal-root"></div>
+  </body>
+</html>
